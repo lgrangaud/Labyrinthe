@@ -1,25 +1,96 @@
-<h2>Mes Niveaux de Labyrinthe</h2>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Labyrinthes</title>
+    <style>
+        /* Style général de la page */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
 
-<!-- Niveau 1 -->
-<div class="niveau">
-    <h3>Niveau 1</h3>
-    <img src="lvl1.jpeg" alt="Labyrinthe Niveau 1" width="400">
-</div>
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
 
-<!-- Niveau 2 -->
-<div class="niveau">
-    <h3>Niveau 2</h3>
-    <img src="lvl2.jpeg" alt="Labyrinthe Niveau 2" width="400">
-</div>
+        /* Conteneur de la galerie (Grille responsive) */
+        .galerie {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
 
-<!-- Niveau 3 -->
-<div class="niveau">
-    <h3>Niveau 3</h3>
-    <img src="lvl3.jpeg" alt="Labyrinthe Niveau 3" width="400">
-</div>
+        /* Carte pour chaque niveau */
+        .carte-niveau {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
 
-<!-- Niveau 4 -->
-<div class="niveau">
-    <h3>Niveau 4</h3>
-    <img src="lvl4.jpeg" alt="Labyrinthe Niveau 4" width="400">
-</div>
+        /* Effet de survol sur les cartes */
+        .carte-niveau:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .carte-niveau h3 {
+            margin-top: 0;
+            color: #34495e;
+            font-size: 1.2rem;
+        }
+
+        /* Style des images pour qu'elles s'adaptent parfaitement */
+        .carte-niveau img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎮 Collection de Labyrinthes</h1>
+
+    <div class="galerie">
+
+        <!-- Niveau 1 -->
+        <div class="carte-niveau">
+            <h3>Niveau 1</h3>
+            <img src="lvl1.jpeg" alt="Labyrinthe Niveau 1">
+        </div>
+
+        <!-- Niveau 2 -->
+        <div class="carte-niveau">
+            <h3>Niveau 2</h3>
+            <img src="lvl2.jpeg" alt="Labyrinthe Niveau 2">
+        </div>
+
+        <!-- Niveau 3 -->
+        <div class="carte-niveau">
+            <h3>Niveau 3</h3>
+            <img src="lvl3.jpeg" alt="Labyrinthe Niveau 3">
+        </div>
+
+        <!-- Niveau 4 -->
+        <div class="carte-niveau">
+            <h3>Niveau 4</h3>
+            <img src="lvl4.jpeg" alt="Labyrinthe Niveau 4">
+        </div>
+
+    </div>
+
+</body>
+</html>
