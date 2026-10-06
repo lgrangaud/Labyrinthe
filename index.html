@@ -204,6 +204,12 @@ const CARTES = {
 "texte": "« Oh my god, qui est ce canon ?! » Vous vous retrouvez devant un miroir.",
 "img": "🪞",
 "indices": []
+},
+"3:F": {
+"titre": "Arrivée !",
+"texte": "« Bravo,tu es arrivé.e au bout !",
+"img": "🥳",
+"indices": []
 }
 };
 /* ===== FIN DE LA CONFIGURATION ===== */
@@ -262,6 +268,13 @@ renderInv(); if (S.derniere) renderCarte(S.derniere,false);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Labyrinthes</title>
+  <h1>Règles du jeu</h1>
+
+<ul>
+    <li>Il faut partir du point D et arriver au point F.</li>
+    <li>Si on passe sur une case contenant un.e chiffre/lettre/symbole, celle-ci active automatiquement son effet.</li>
+    <li>Si on atterrit sur une case par le biais d'un effet, cela n'active pas le sien.</li>
+</ul>
     <style>
         /* Style général de la page */
         body {
