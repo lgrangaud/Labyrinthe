@@ -7,7 +7,7 @@
 <style>
 :root{--bg:#f4efe6;--card:#fffdf8;--ink:#ffffff;--mut:#ffffff;--acc:#b5532a;--line:#dcd2c0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1712;--card:#262019;--ink:#ffffff;--mut:#ffffff;--acc:#e08a5c;--line:#3a3227}}
-:root[data-theme="dark"]{--bg:#1b1712;--card:#262019;--ink:#ffffff;--mut:#a89a85;--acc:#e08a5c;--line:#3a3227}
+:root[data-theme="dark"]{--bg:#1b1712;--card:#262019;--ink:#ffffff;--mut:#ffffff;--acc:#e08a5c;--line:#3a3227}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,serif}
@@ -272,7 +272,8 @@ renderInv(); if (S.derniere) renderCarte(S.derniere,false);
 
 <ul>
     <li>Il faut partir du point D et arriver au point F.</li>
-    <li>Si on passe sur une case contenant un.e chiffre/lettre/symbole, celle-ci active automatiquement son effet.</li>
+    <li>On peut se déplacer comme dans un labyrinthe (quel mot a la con). Tant qu'il existe un chemin, on peut avancer</li>
+    <li>Si on passe sur une case contenant un.e chiffre/lettre/symbole, celle-ci active automatiquement son effet. Entrez le code de la case ci-dessus</li>
     <li>Si on atterrit sur une case par le biais d'un effet, cela n'active pas le sien.</li>
 </ul>
     <style>
