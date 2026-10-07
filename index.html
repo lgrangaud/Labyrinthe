@@ -5,9 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Labyrinthe</title>
 <style>
-:root{--bg:#f4efe6;--card:#E3D9BF;--ink:#000000;--mut:#000000;--acc:#000000;--line:#000000;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1712;--card:#262019;--ink:#ffffff;--mut:#ffffff;--acc:#e08a5c;--line:#ffffff}}
-:root[data-theme="dark"]{--bg:#1b1712;--card:#262019;--ink:#ffffff;--mut:#ffffff;--acc:#e08a5c;--line:#ffffff}
+:root{
+  --bg:#f4efe6;
+  --card:#E3D9BF;
+  --ink:#1a1612; /* Texte sombre et lisible sur fond beige */
+  --mut:#5a5248; /* Texte secondaire contrasté */
+  --acc:#b35c1e; /* Couleur d'accentuation plus visible */
+  --line:#c2b69b; /* Bordures nettes */
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1b1712;
+    --card:#262019;
+    --ink:#f4efe6; /* Texte clair sur fond sombre */
+    --mut:#b8aca0;
+    --acc:#e08a5c;
+    --line:#42362b;
+  }
+}
+
+:root[data-theme="dark"]{
+  --bg:#1b1712;
+  --card:#262019;
+  --ink:#f4efe6;
+  --mut:#b8aca0;
+  --acc:#e08a5c;
+  --line:#42362b;
+}
+
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,serif}
